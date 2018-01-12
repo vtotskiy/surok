@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surok A</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body ng-app="surokAppMain">
+  <div class="container" ng-controller="AppCtrl">
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>id</th>
+                  <th>name</th>
+                  <th>desc</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr ng-repeat="item in websites">
+                  <td>{{item.id}}</td>
+                  <td>{{item.name}}</td>
+                  <td>{{item.desc}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/surok.main.js"></script>
+</body>
+</html>
