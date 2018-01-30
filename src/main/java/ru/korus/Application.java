@@ -11,8 +11,13 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-    @RequestMapping("/hello")
+    @RequestMapping("/") //Основной разбор урлов идет в контроллерах
     public String showHelloWorld(){
         return "hello-world";
     }
+    @RequestMapping("/admin") //Привязываем урл к шаблону в папке templates
+    public String admin() {
+        return "/admin";
+    }
+
 }
