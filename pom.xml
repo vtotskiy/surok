@@ -49,6 +49,11 @@
            <artifactId>spring-boot-starter-jdbc</artifactId>
            <version>1.5.9.RELEASE</version>
        </dependency>
+       <dependency>
+           <groupId>com.oracle</groupId>
+           <artifactId>ojdbc6</artifactId>
+           <version>LATEST</version>
+       </dependency>
    </dependencies>
    <build>
        <plugins>
