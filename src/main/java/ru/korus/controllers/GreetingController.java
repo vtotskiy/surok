@@ -1,10 +1,10 @@
 package ru.korus.controllers;
 
-import java.util.concurrent.atomic.AtomicLong;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-import ru.korus.model.Greeting;
+        import java.util.concurrent.atomic.AtomicLong;
+        import org.springframework.web.bind.annotation.RequestMapping;
+        import org.springframework.web.bind.annotation.RequestParam;
+        import org.springframework.web.bind.annotation.RestController;
+        import ru.korus.model.Greeting;
 
 @RestController
 public class GreetingController {
