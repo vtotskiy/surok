@@ -10,9 +10,12 @@ import javax.sql.DataSource;
 public class SpringDao {
 
 
-    private DataSource dataSource;
-    private JdbcTemplate jdbcTemplate = new JdbcTemplate();
+    private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    public SpringDao(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
+    }
 
     public int getRecordCount() {
         String sql = "select count(1) from tmp_jj_test";
@@ -24,20 +27,22 @@ public class SpringDao {
         return jdbcTemplate.queryForObject(sql, new Object[]{id}, String.class);
     }
 
-    public DataSource getDataSource() {
-        return dataSource;
-    }
-    @Autowired
-    public void setDataSource(DataSource dataSource) {
-        this.jdbcTemplate = new JdbcTemplate(dataSource);
-    }
 
-    public JdbcTemplate getJdbcTemplate() {
-        return jdbcTemplate;
-    }
 
-    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
+    //    public DataSource getDataSource() {
+//        return dataSource;
+//    }
+//    @Autowired
+//    public void setDataSource(DataSource dataSource) {
+//        this.jdbcTemplate = new JdbcTemplate(dataSource);
+//    }
+//
+//    public JdbcTemplate getJdbcTemplate() {
+//        return jdbcTemplate;
+//    }
+//
+//    public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+//        this.jdbcTemplate = jdbcTemplate;
+//    }
 
 }

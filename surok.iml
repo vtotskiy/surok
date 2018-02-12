@@ -89,5 +89,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:4.3.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.3.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: com.oracle:ojdbc7" level="project" />
+    <orderEntry type="library" name="ojdbc8" level="application" />
   </component>
 </module>
