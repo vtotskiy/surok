@@ -18,9 +18,13 @@ public class Application {
     public String showHelloWorld(){
         return "hello-world";
     }
-    @RequestMapping("/admin") //Привязываем урл к шаблону в папке templates
+    @RequestMapping("/admin") //Привязываем урл к шаблону в папке templates. тут используется fremaker https://freemarker.apache.org/docs/
     public String admin() {
         return "/admin";
+    }
+    @RequestMapping("/db2/ins") //Основной разбор урлов идет в контроллерах
+    public String showIns(){
+        return "db2/ins";
     }
 
 }
