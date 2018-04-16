@@ -10,8 +10,7 @@
   <div><a href="/db2?id=">restfull списка базы данных (id null или 1 2)</a></div>
   <div><a href="/db2_1?id=2">restfull строки базы данных</a></div>
   <div><a href="/db2_id?name=Вторая запись">restfull id по наименование</a></div>
-  <div><a href="/db2_ins">добавление</a></div>
-  <div><a href="/db2_upd">изменение</a></div>
-  <div><a href="/db2_del">удаление</a></div>
+  <div><a href="/db2/ins">добавление/изменение</a></div>
+  <div><a href="/db2/del">удаление</a></div>
 </body>
 </html>

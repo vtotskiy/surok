@@ -22,9 +22,13 @@ public class Application {
     public String admin() {
         return "/admin";
     }
-    @RequestMapping("/db2/ins") //Основной разбор урлов идет в контроллерах
+    @RequestMapping("/db2/ins")
     public String showIns(){
         return "db2/ins";
+    }
+    @RequestMapping("/db2/del")
+    public String showDel(){
+        return "db2/del";
     }
 
 }
